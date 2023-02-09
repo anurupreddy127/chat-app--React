@@ -1,5 +1,5 @@
 import React from 'react';
-import 'rsuite/dist/rsuite.min.css';
+import 'rsuite/dist/styles/rsuite-default.css';
 import './styles/main.scss';
 import { Switch } from 'react-router';
 import PrivateRoute from './components/PrivateRoute';
