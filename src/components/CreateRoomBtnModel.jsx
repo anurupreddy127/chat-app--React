@@ -86,7 +86,7 @@ const CreateRoomBtnModel = () => {
             </FormGroup>
 
             <FormGroup>
-              <ControlLabel>Room Name</ControlLabel>
+              <ControlLabel>Room Description</ControlLabel>
               <FormControl
                 componentClass="textarea"
                 rows={5}
