@@ -48,3 +48,18 @@ export async function getUserUpdate(userId, keyToUpdate, value, db) {
 
   return updates;
 }
+
+export function groupBy(array, groupinKeyFn) {
+  return array.reduce((result, item) => {
+    const groupinKey = groupinKeyFn(item);
+
+    if (!result[groupinKey]) {
+      // eslint-disable-next-line no-param-reassign
+      result[groupinKey] = [];
+    }
+
+    result[groupinKey].push(item);
+
+    return result;
+  }, {});
+}
